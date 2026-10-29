@@ -5,6 +5,9 @@ body {
     background-color: #e3e3e3;
     color: #754482;
     box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100vh;
 }
 
 header {
@@ -21,6 +24,20 @@ nav {
     padding: 12px 64px;
 }
 
+footer {
+    margin-top: auto;
+    border-top: 2px solid rgb(117 68 130 / 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -33,7 +50,7 @@ nav {
 
 .nav-item {
     background-color: transparent;
-    color: #754482;
+    color: inherit;
     font-size: 1.2rem;
     border: none;
     padding: 12px;
@@ -76,4 +93,14 @@ nav {
     width: 100%;
     height: auto;
     border-radius: 12px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    font-style: italic;
 }
