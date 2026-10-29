@@ -26,7 +26,7 @@ nav {
 
 footer {
     margin-top: auto;
-    border-top: 2px solid rgb(117 68 130 / 0.5);
+    border-top: 1px solid rgb(117 68 130 / 0.5);
 }
 
 a {
@@ -78,12 +78,12 @@ a:hover {
     gap: 12px;
 }
 
-.title {
+.hero-title {
     font-size: 4rem;
     font-weight: 900;
 }
 
-.description {
+.hero-description {
     font-size: 1.5rem;
     font-style: italic;
     line-height: 1.5;
@@ -99,7 +99,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 8px;
     opacity: 0.8;
     font-size: 0.9rem;
     font-style: italic;
