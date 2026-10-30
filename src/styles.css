@@ -6,7 +6,7 @@ body {
     color: #754482;
     box-sizing: border-box;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -93,6 +93,73 @@ a:hover {
     width: 100%;
     height: auto;
     border-radius: 12px;
+}
+
+.menu {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    gap: 16px;
+}
+
+.menu-header {
+    place-items: center;
+}
+
+.menu-title {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.menu-description {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.menu-left {
+    grid-column: 1;
+    display: grid;
+    gap: 12px;
+}
+
+.menu-right {
+    grid-column: 2;
+    display: grid;
+    gap: 12px;
+}
+
+.category {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 8px;
+    padding: 4px 0;
+    border-bottom: 2px solid rgb(117 68 130 / 0.5);
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+}
+
+.item-info {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+}
+
+.item-name {
+    font-weight: 900;
+}
+
+.item-price {
+    grid-column: 2;
+    font-weight: 900;
+    justify-self: end;
 }
 
 .footer-content {
