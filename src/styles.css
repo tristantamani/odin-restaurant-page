@@ -38,6 +38,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -65,7 +69,7 @@ a:hover {
     padding: 32px 64px;
 }
 
-.hero {
+.hero, .about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
@@ -78,7 +82,9 @@ a:hover {
     gap: 12px;
 }
 
-.hero-title {
+.hero-title,
+.menu-title,
+.about-title {
     font-size: 4rem;
     font-weight: 900;
 }
@@ -89,7 +95,8 @@ a:hover {
     line-height: 1.5;
 }
 
-.hero-banner img {
+.hero-banner img,
+.about-banner img {
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -103,11 +110,6 @@ a:hover {
 
 .menu-header {
     place-items: center;
-}
-
-.menu-title {
-    font-size: 4rem;
-    font-weight: 900;
 }
 
 .menu-description {
@@ -160,6 +162,23 @@ a:hover {
     grid-column: 2;
     font-weight: 900;
     justify-self: end;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 .footer-content {
