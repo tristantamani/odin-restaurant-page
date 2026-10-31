@@ -24,6 +24,19 @@ nav {
     padding: 12px 64px;
 }
 
+button {
+    background-color: transparent;
+    color: inherit;
+    font-size: 1.2rem;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    border-bottom: 2px solid #754482;
+}
+
 footer {
     margin-top: auto;
     border-top: 1px solid rgb(117 68 130 / 0.5);
@@ -50,19 +63,6 @@ a:hover {
 
 .logo img {
     width: 80px;
-}
-
-.nav-item {
-    background-color: transparent;
-    color: inherit;
-    font-size: 1.2rem;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-}
-
-.nav-item:hover {
-    border-bottom: 2px solid #754482;
 }
 
 .container {
