@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'Electrolize';
+    src: url('Electrolize-Regular.woff2') format('woff2'),
+        url('Electrolize-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Electrolize';
     background-color: #e3e3e3;
     color: #754482;
     box-sizing: border-box;
@@ -27,6 +36,7 @@ nav {
 button {
     background-color: transparent;
     color: inherit;
+    font-family: inherit;
     font-size: 1.2rem;
     border: none;
     padding: 12px;
@@ -167,7 +177,7 @@ a:hover {
 .about {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
 }
 
 .about-title {
@@ -177,7 +187,8 @@ a:hover {
 }
 
 .about-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
     text-align: justify;
 }
 
